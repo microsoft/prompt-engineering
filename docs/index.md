@@ -22,7 +22,7 @@ The easiest way to get started with OpenAI is to use the OpenAI Playground.  Thi
 
 ![OpenAI Playground](/images/01-add-two-numbers-openai.gif)
 
-The best way to learn how to use OpenAI models is to try them out.  Check out the Getting Access section below to learn how you can start.  OpenAI has a number of examples for how to use their models including [code examples](https://beta.openai.com/examples?category=code).   For Codex, the [best practices](https://beta.openai.com/docs/guides/code/best-practices) documentation is a great resource for understanding how use to it. 
+The best way to learn how to use OpenAI models is to try them out.  Check out the Getting Access section below to learn how you can get started.  OpenAI has a number of examples for how to use their models including [code examples](https://beta.openai.com/examples?category=code).   For Codex, the [best practices](https://beta.openai.com/docs/guides/code/best-practices) documentation is a great resource for understanding how use to it. 
 
 Codex also powers [GitHub Copilot](https://copilot.github.com), an AI pair programmer available in [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).  Copilot draws context from code and comments you’ve written, and then suggests new lines or whole functions.  I wrote this article in VS Code, and as I wrote the above Python example, Copilot automatically used Codex to suggest the code.  Below is a screenshot of Copilot in action.  The grey text including the Python function is Copilot's suggested completion.  Note that it even suggests the close quote for the Markdown code section.
 
