@@ -190,7 +190,7 @@ With what you learned in this article, you can take your first steps to become a
 
 ## Getting Access to Codex, Copilot, and OpenAI
 
-Registered Microsot Build 2022 attendees can sign up to use Codex and other OpenAI models for free [here](https://mybuild.microsoft.com/en-US/AI-Vision-Keynote).  They can also sign up to use Copilot for free until its general availability later in 2022 from the same page.
+Signing up for OpenAI is [easy](https://beta.openai.com).  Codex is currently in limited preview: registered Microsot Build 2022 attendees can sign up to use Codex and other OpenAI models for free.  See the details [here](https://mybuild.microsoft.com/en-US/AI-Vision-Keynote).  They can also sign up to use Copilot from the same page.
 
 Microsoft also offers OpenAI models in the [Azure OpenAI Service](https://aka.ms/azure-openai) with Azure's enterprise capabilities of security, compliance, and global reach.  Azure OpenAI Service follows Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6) and offers tools to help you offer these models responsibliy to customers.  You can learn more about Azure OpenAI Service and sign up [here](https://aka.ms/azure-openai).
 ## Next Steps
