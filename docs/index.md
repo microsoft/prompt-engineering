@@ -18,13 +18,13 @@ def add(a, b):
     return a + b
 ```
 
-The easiest way to get started with OpenAI is to use the OpenAI Playground, which is available for free for new users.  This picture shows the Playground after Codex has generated the completion for the prompt in the comment.
+The easiest way to get started with OpenAI is to use the OpenAI Playground.  This picture shows the Playground after Codex has generated the completion for the prompt in the comment.
 
 ![OpenAI Playground](/images/01-add-two-numbers-openai.gif)
 
-You can also try OpenAI models in the [Azure OpenAI Service](https://aka.ms/azure-openai).  OpenAI has a number of examples for how to use their models including [code examples](https://beta.openai.com/examples?category=code).  The best way to learn how to use OpenAI models is to try them out.  For Codex, the [best practices](https://beta.openai.com/docs/guides/code/best-practices) documentation is a great resource for understanding how use to it.  Registered attendees of [Microsoft Build 2022](https://mybuild.microsoft.com) will have access to Codex models.  Otherwise, if you don't have access to Codex, you can join the [waitlist](http://beta.openai.com/codex-waitlist).
+The best way to learn how to use OpenAI models is to try them out.  Check out the Getting Access section below to learn how you can start.  OpenAI has a number of examples for how to use their models including [code examples](https://beta.openai.com/examples?category=code).   For Codex, the [best practices](https://beta.openai.com/docs/guides/code/best-practices) documentation is a great resource for understanding how use to it. 
 
-Codex also powers [GitHub Copilot](https://copilot.github.com), an AI pair programmer available in [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).  Copilot draws context from code and comments you’ve written, and then suggests new lines or whole functions.  I wrote this article in VS Code, and as I wrote the above Python example, Copilot automatically used Codex to suggest the code.  Below is a screenshot of Copilot in action.  The grey text including the Python function is Copilot's suggested completion.  Note that it even suggests the close quote for the Markdown code section.  Microsoft Build 2022 attendees also get free Copilot preview access until it launches later this year.
+Codex also powers [GitHub Copilot](https://copilot.github.com), an AI pair programmer available in [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).  Copilot draws context from code and comments you’ve written, and then suggests new lines or whole functions.  I wrote this article in VS Code, and as I wrote the above Python example, Copilot automatically used Codex to suggest the code.  Below is a screenshot of Copilot in action.  The grey text including the Python function is Copilot's suggested completion.  Note that it even suggests the close quote for the Markdown code section.
 
 ![Copilot completion example](/images/01-copilot-add-two-numbers.png)
 
@@ -178,7 +178,7 @@ Fine tuning is the process of using a dataset of curated prompt-completion pairs
 
 1. Performance: Prompt engineering as we have discussed here can increase your prompt size, which in turn increases the latency of the completion responses from Codex.  For production applications, you may need to decrease your prompt size to improve the perceived latency of your application.  One way to do this is to fine tune your model.  In addition to improving accuracy of the model completions, fine tuning has the added benefit that it may improve performance by making it possible to have good results with shorter context in the prompt.  
 2. Interaction Design: How you guide users in their interaction with Codex can have a significant impact on their success with using the model.  This is especially true because the output of the model is not always reliable.  For example, Copilot makes it easy for users to reject Codex's suggestions because a user has to actively accept Codex's output.  Because VS Code is an IDE, it's easy for users to edit Codex's output if it needs fixing.
-3. Responsible Use: Large models such as OpenAI are trained on internet data, and can reflect the biases in the training data.  To use Codex or other OpenAI models in production, you need to do things like *content filtering*.  Both OpenAI and Azure OpenAI Service offer capabilities to do this.  The OpenAI content filter is described [here](https://beta.openai.com/docs/engines/content-filter).  Azure OpenAI Service follows Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6).
+3. Responsible Use: Large models such as OpenAI are trained on internet data, and can reflect the biases in the training data.  To use Codex or other OpenAI models in production, you need to do things like *content filtering*.  Both OpenAI and Azure OpenAI Service offer capabilities to do this.  The OpenAI content filter is described [here](https://beta.openai.com/docs/engines/content-filter).  
 
 ## Prompt Engineering as "Software 3.0"
 
@@ -188,6 +188,11 @@ Writing prompts is a new skill in how to build software.  Andrej Karpathy, the h
 
 With what you learned in this article, you can take your first steps to become a Software 3.0 wizard :D!
 
+## Getting Access to Codex, Copilot, and OpenAI
+
+Registered Microsot Build 2022 attendees can sign up to use Codex and other OpenAI models for free [here](https://mybuild.microsoft.com/en-US/AI-Vision-Keynote).  They can also sign up to use Copilot for free until its general availability later in 2022 from the same page.
+
+Microsoft also offers OpenAI models in the [Azure OpenAI Service](https://aka.ms/azure-openai) with Azure's enterprise capabilities of security, compliance, and global reach.  Azure OpenAI Service follows Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6) and offers tools to help you offer these models responsibliy to customers.  You can learn more about Azure OpenAI Service and sign up [here](https://aka.ms/azure-openai).
 ## Next Steps
 
 There is no substitute for playing with the models yourself to learn how to use this exciting new technology.  You can also look at these samples to learn about building Codex based applications in more detail, including prompt engineering.
@@ -198,6 +203,7 @@ There is no substitute for playing with the models yourself to learn how to use 
 
 We can't wait to see what you build with Codex to help people achieve new things or to do things more quickly!  If you have any questions or comments, feel free to [reach out](mailto:codexquestions@microsoft.com?subject=Codex%20Blog).
 
+
 ## Contributions
 
-Keiji Kanazawa ([GitHub](https://github.com/gojira), [Twitter](https://twitter.com/gojira)) wrote this article.  Ryan Volum helped me and many others understand prompt engineering and implemented many of these techniques in the sample applications.  Dom Divakaruni, Seth Juarez, Brian Krabach, Jennifer Marsman, Adam Zukor and others reviewed this blog post and provided valuable feedback.
+Keiji Kanazawa ([GitHub](https://github.com/gojira), [Twitter](https://twitter.com/gojira)) wrote this article.  Ryan Volum helped me and many others understand prompt engineering and implemented many of these techniques in the sample applications.  Dom Divakaruni, Seth Juarez, Brian Krabach, Jennifer Marsman, Adam Zukor and others reviewed this blog post and provided valuable feedback.  
