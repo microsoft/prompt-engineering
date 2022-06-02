@@ -201,7 +201,7 @@ There is no substitute for playing with the models yourself to learn how to use 
 * [Codex Babylon](https://github.com/microsoft/Codex-Babylon)
 * [Codex Command Line Interface](https://github.com/microsoft/Codex-CLI)
 
-We can't wait to see what you build with Codex to help people achieve new things or to do things more quickly!  If you have any questions or comments, feel free to [reach out](mailto:codexquestions@microsoft.com?subject=Codex%20Blog).
+We can't wait to see what you build with Codex to help people achieve new things or to do things more quickly!  If you have any questions or comments, feel free to [reach out](mailto:codexblog@microsoft.com?subject=Codex%20Blog).
 
 
 ## Contributions
