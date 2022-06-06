@@ -8,7 +8,7 @@ This article will show you how to get models like Codex to generate code you wan
 
 ![Prompt Completion](/images/pattern-01-prompt-completion-small.png)
 
-The output to a prompt is called a *completion*.  It's just another name for the output to a prompt.  An example task might be to write a Python program to add two numbers.  If you write out the task as a Python comment like so:
+Like a person writing an essay, an AI model takes a prompt and continues writing based on the text in the prompt.  The new text that the model outputs is called the *completion*.  An example task might be to write a Python program to add two numbers.  If you write out the task as a Python comment like so:
 ```Python
 # Write a function that adds two numbers and returns the result.
 ```
@@ -28,7 +28,7 @@ Codex also powers [GitHub Copilot](https://copilot.github.com), an AI pair progr
 
 ![Copilot completion example](/images/01-copilot-add-two-numbers.png)
 
-So how can you apply the power of models like Codex in your applications?  An example like the one above is simple and easy for Codex to generate.  For custom applications, you may need to craft the prompt to better describe your problem.  This includes giving Codex examples to help tell it what you are looking for.  This is called *prompt engineering*.  The rest of this article shows you examples and techniques in prompt engineering to help you get the code you want.  
+So how can you apply the power of models like Codex in your applications?  An example like the one above is simple and easy for Codex to generate.  For custom applications, you may need to craft the prompt to better describe your problem.  This includes giving Codex examples to help tell it what you are looking for. The rest of this article shows you examples and techniques in prompt engineering to help you get the code you want.  
 
 ## Tell It: Guide the Model with a High Level Task Description
 You saw above how you can *tell* Codex what you want and it will generate it.  Codex is amazingly capable at generating code.  The *quality* of its completions depends a lot on what you tell it to do.
@@ -176,6 +176,8 @@ You can tune the behavior of OpenAI models with various *hyperparameters* such a
 Fine tuning is the process of using a dataset of curated prompt-completion pairs to customize a model's behavior for your use case.  Fine tuning can increase the accuracy of the completions for your prompts.  We won't cover fine tuning in detail here as it is not available yet for Codex.  Here are links to general documentation for fine tuning on [OpenAI](https://beta.openai.com/docs/guides/fine-tuning) and [Azure](https://aka.ms/azure-openai).
 ### User Experience
 
+User preception can make or break the experience of what you build. Here are a few areas to keep in mind as you welcome users to your application.
+
 1. Performance: Prompt engineering as we have discussed here can increase your prompt size, which in turn increases the latency of the completion responses from Codex.  For production applications, you may need to decrease your prompt size to improve the perceived latency of your application.  One way to do this is to fine tune your model.  In addition to improving accuracy of the model completions, fine tuning has the added benefit that it may improve performance by making it possible to have good results with shorter context in the prompt.  
 2. Interaction Design: How you guide users in their interaction with Codex can have a significant impact on their success with using the model.  This is especially true because the output of the model is not always reliable.  For example, Copilot makes it easy for users to reject Codex's suggestions because a user has to actively accept Codex's output.  Because VS Code is an IDE, it's easy for users to edit Codex's output if it needs fixing.
 3. Responsible Use: Large models such as OpenAI are trained on internet data, and can reflect the biases in the training data.  To use Codex or other OpenAI models in production, you need to do things like *content filtering*.  Both OpenAI and Azure OpenAI Service offer capabilities to do this.  The OpenAI content filter is described [here](https://beta.openai.com/docs/engines/content-filter).  
@@ -206,4 +208,4 @@ We can't wait to see what you build with Codex to help people achieve new things
 
 ## Contributions
 
-Keiji Kanazawa ([GitHub](https://github.com/gojira), [Twitter](https://twitter.com/gojira)) wrote this article.  Ryan Volum helped me and many others understand prompt engineering and implemented many of these techniques in the sample applications.  Dom Divakaruni, Seth Juarez, Brian Krabach, Jennifer Marsman, Adam Zukor and others reviewed this blog post and provided valuable feedback.  
+Keiji Kanazawa ([GitHub](https://github.com/gojira), [Twitter](https://twitter.com/gojira)) wrote this article.  Ryan Volum helped me and many others understand prompt engineering and implemented many of these techniques in the sample applications.  Dom Divakaruni, Seth Juarez, Brian Krabach, Jon Malsan, Jennifer Marsman, Adam Zukor and others reviewed this blog post and provided valuable feedback.  
