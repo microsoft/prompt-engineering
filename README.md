@@ -2,7 +2,7 @@
 
 This project hosts articles to help you use [OpenAI](https://openai.com/)'s [Codex](https://openai.com/blog/openai-codex/) models for generating and manipulating code.
 
-[How to get Codex to produce the code you want](https://aka.ms/oai/prompt-engieering) gives you an introduction to *prompt engineering*, the practice of creating prompts to get your model to generate code.
+[How to get Codex to produce the code you want](https://aka.ms/oai/prompt-engineering) gives you an introduction to *prompt engineering*, the practice of creating prompts to get your model to generate code.
 
 You can look at the examples in these repositories to see prompt engineering in practice:
 * [Codex-Babylon](https://github.com/microsoft/Codex-Babylon)
